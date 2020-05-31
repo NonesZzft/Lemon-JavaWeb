@@ -1,0 +1,49 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="rest-jersey:war exploded">
+    <output-path>$PROJECT_DIR$/target/rest-jersey-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>rest-jersey</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rest-jersey" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-bundle:1.19" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Maven: org.json:json:20140107" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.19" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-servlet:1.19" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-json:1.19" />
+          <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.2" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-xc:1.9.2" />
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.11" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-core:2.3.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.0" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.5" />
+          <element id="library" level="project" name="Maven: org.jvnet.staxex:stax-ex:1.7.8" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.13" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.15" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/rest-jersey-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="rest-jersey/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,62 @@
+environment
+    IDE: Intellij idea
+    database: MySql
+
+provided denpendencies
+    java version 1.8.0_231
+    Tomcat 9.0.27 (provided)
+    
+complie denpendencies (detail information in pom.xml)
+    jersey
+    mysql-connector-java
+    java-jwt
+    jjwt
+    fastjson
+
+
+Step 1
+    in sql.zip
+    run the build table.sql file to generate database tables
+    run the DELIMITER code in procedule.sql file to generate a procedule for future stock update
+    run the build stock.sql to generate 100 stocks
+    run the update.sql to generate events to update stocks every 30 seconds
+
+Step 2
+    in Tomcat file
+    modify the /conf/server.xml file, add following code 
+        <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
+                clientAuth="false" sslProtocol="TLS" 
+                keystoreFile="conf/.keystore"
+                keystorePass="sishen123" 
+                compression="on" compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/json" />
+    in keystroepass, input your own password
+    it means configure the https port to 8443, and the last line means compress these files when transfer
+    then in chrome browser, open chrome://flags, enable following option
+        Allow invalid certificates for resources loaded from localhost.
+
+Step 3
+    open Intellij idea
+    new project -> name it StockWeb -> choose jdk 1.8 and Tomcat 9.0.27
+    add framework support maven
+    copy files in StockWeb.zip to this project
+    same operation for other 2 files
+
+Step 4
+    Edit the first project configuration
+        HTTP port 8080
+        select the option "Deploy applications configured in Tomcat instance", in order to open different server in the same Tomcat
+        HTTPS port 8443
+        JMX port 1098
+        Open browser URL: https://localhost:8443/StockWeb_war_exploded/login.jsp
+    Edit the second project configuration
+        HTTP port 8082
+        select the option "Deploy applications configured in Tomcat instance", in order to open different server in the same Tomcat
+        JMX port 1100
+    Edit the third project configuration
+        HTTP port 8081
+        select the option "Deploy applications configured in Tomcat instance", in order to open different server in the same Tomcat
+        JMX port 1099
+
+Step 5
+    run first project, then run the second and the third project.

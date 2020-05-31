@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="StockWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>StockWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="StockWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="StockWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

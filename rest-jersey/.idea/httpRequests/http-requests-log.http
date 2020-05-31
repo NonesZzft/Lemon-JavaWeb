@@ -1,0 +1,40 @@
+POST http://localhost:8081/rest_jersey_war_exploded/
+Accept: */*
+Cache-Control: no-cache
+
+as
+
+###
+
+POST http://localhost:8081/rest_jersey_war_exploded/
+Accept: */*
+Cache-Control: no-cache
+
+as
+
+###
+
+POST http://localhost:8081/rest_jersey_war_exploded
+Accept: */*
+Cache-Control: no-cache
+
+as
+
+###
+
+POST http://localhost:8081/rest_jersey_war_exploded
+Accept: */*
+Cache-Control: no-cache
+
+as
+
+###
+
+POST http://localhost:8081/rest_jersey_war_exploded
+Accept: */*
+Cache-Control: no-cache
+
+as
+
+###
+
