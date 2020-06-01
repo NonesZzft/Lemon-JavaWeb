@@ -10,3 +10,9 @@ It's a project about buying and selling stock from web fullfilling by java with 
 Sql file generates database the project needs.
 
 Instruction states how to use and run this project.
+
+final report.doc states the process of realization.
+
+The relationship of 3 projects is as follows.
+
+![relation](https://github.com/NonesZzft/Lemon-JavaWeb/blob/master/image.png)
