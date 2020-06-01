@@ -11,7 +11,7 @@ Sql file generates database the project needs.
 
 Instruction states how to use and run this project.
 
-final report.doc states the process of realization.
+final report.doc states the concrete result and process of realization.
 
 The relationship of 3 projects is as follows.
 
